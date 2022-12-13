@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import saludar from "./utils";
 
 function App() {
+  saludar();
   return (
     <div className="App">
       <header className="App-header">
