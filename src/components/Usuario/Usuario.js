@@ -1,6 +1,8 @@
+import "./Usuario.css"
+
 export const Usuario = ({nombre, curso, edad}) => {
     return(
-        <div>
+        <div className="usuario">
             <h2>{nombre}</h2>
             <p>Cursando: <strong>{curso}</strong></p>
             <p>Edad:{edad}</p>
