@@ -1,4 +1,4 @@
-import "./Usuario.css"
+import "./Usuario.scss"
 
 export const Usuario = ({nombre, curso, edad}) => {
     return(
