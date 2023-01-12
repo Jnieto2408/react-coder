@@ -1,0 +1,19 @@
+.mybutton{
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+}
+.variant-1{
+    color: white;
+    background-color: red;
+}
+.variant-2{
+    color: white;
+    background-color: blue;
+}
