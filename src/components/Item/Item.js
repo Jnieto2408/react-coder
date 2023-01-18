@@ -1,14 +1,14 @@
 
 
 
-const Item = ({prod}) => {
+const Item = ({name, image, description, price, id}) => {
  
     return(
             <div className="col-4">
-              <img src={prod.image} alt={prod.name} />
-              <h4>{prod.name}</h4>
-              <p>{prod.description}</p>
-              <p>Precio: <b>${prod.price}</b></p>
+              <img src={image} alt={name} />
+              <h4>{name}</h4>
+              <p>{description}</p>
+              <p>Precio: <b>${price}</b></p>
             </div>
     )
 }
