@@ -7,4 +7,18 @@ export const pedirDatos = () => {
     }, 3000);
   });
 }
-export default pedirDatos
+
+export const pedirItemPorId = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const item = stock.find((el)=> el.id === id)
+      if (item) {
+        resolve(item)
+      } else {
+        reject({
+          error: "No se encontro ese producto"
+        })
+      }
+    }, 2000);
+  });
+}
