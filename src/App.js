@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { useState } from "react";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainter";
-import Nosotros from "./components/Nosotros/Nosotros";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Contacto from "./components/Contacto/Contacto";
 
 function App() {
 
@@ -18,8 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/productos/:categoryId" element={<ItemListContainer />} />
-        <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
