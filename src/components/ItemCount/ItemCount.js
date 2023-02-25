@@ -16,7 +16,7 @@ const ItemCount = ({cantidad, max, setCantidad, onAdd}) => {
         <div>
             <button 
             onClick={handleRestar} 
-            className={`btn ${cantidad > 1 ? "btn-outline-primary" : "btn-outline-danger"}`}
+            className={`btn btn-outline-${cantidad > 1 ? "primary" : "danger"}`}
             disabled={cantidad === 1}>
                 -
             </button>
